@@ -16,4 +16,4 @@
         <a class="elementor-icon elementor-social-icon elementor-social-icon-adjust elementor-repeater-item-439ab46" target="_blank">
             <span class="elementor-screen-only"></span>
         <i class="fas fa-adjust"></i></a>      
-    </div>
+    </div>     
