@@ -8,3 +8,4 @@ O VLibras( http://vlibras.gov.br ) é um conjunto de ferramentas usadas na tradu
 
 ## Controles de Acessibilidade
 - Aumentar e Diminuir fonte (Baseado no plugin - https://github.com/pojome/one-click-accessibility)
+- Icones (http://svgicons.sparkk.fr/)
