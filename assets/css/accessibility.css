@@ -1,3 +1,102 @@
+@media screen and (max-width: 768px) {
+  div#accessibility {
+    display: none !important;
+  }
+
+  div[vw].enabled {
+    display: none !important;
+  }
+}
+
+
+/*! Accessibility Controls */
+
+div#accessibility {
+  position: fixed;
+  width: 60px !important;
+  height: 60px !important;
+  right: 0 !important;
+  z-index: 99999999 !important;
+  font-family: Arial !important;
+  color: #000;
+  line-height: 1.3 !important;
+  display: block;
+  background-color: #ffffff !important;
+  border-radius: 30px !important;
+  margin-right: 20px !important;
+  bottom: 160px !important;
+}
+
+div#accessibility img {
+  width: 42px !important;
+  height: 42px !important;
+  margin: 9px !important;
+  padding: 0px !important;
+  max-width: none;
+  display: block;
+}
+
+.accessibility-box-title {
+  display: none;
+  position: relative;
+  width: 180px;
+  height: 25px;
+  background-color: #FFF !important;
+  left: -190px;
+  top: -80px;
+  border-radius: 10px;
+}
+
+.accessibility-box-title h1 {
+  font-size: 16px !important;
+    font-family: sans-serif !important;
+    color: #1351b4;
+    margin: 0px !important;
+    padding: 0px !important;
+    text-align: center!important;
+    font-weight: bold !important;
+    line-height: 25px !important;
+}
+
+.accessibility-box-wrapper {
+  display: none;
+  position: relative;
+  width: 185px;
+  height: 42px;
+  background-color: #fff !important;
+  left: -190px;
+  top: -75px;
+  border-radius: 20px;
+}
+
+.svg-icon {
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #000;
+}
+
+.svg-icon circle {
+  stroke: #000;
+  stroke-width: 1;
+}
+
+/*! Vlibras */
+div[vw].enabled {
+  display: block;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin-right: 20px;
+  bottom: 90px !important;
+  top: unset !important;
+}
+
 /*! pojo-accessibility - v2.0.3 - 28-05-2018 */
 #pojo-a11y-toolbar {
     position: fixed;

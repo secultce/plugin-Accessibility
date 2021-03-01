@@ -4,7 +4,13 @@ $(document).ready(function($){
     var minTamanhoFont = 8;
     var maxTamanhoFont = 30;
 
-    $(".elementor-social-icon-plus-circle").on("click", function(e){
+    
+    $("#accessibility-btn").on("click", function(e){
+        $(".accessibility-box-wrapper").fadeToggle();
+        $(".accessibility-box-title").fadeToggle();
+    });
+
+    $("#accessibility-plus").on("click", function(e){
        
         e.preventDefault();
 
@@ -23,7 +29,7 @@ $(document).ready(function($){
 
     });
 
-    $(".elementor-social-icon-minus-circle").on("click", function(e){    
+    $("#accessibility-minus").on("click", function(e){    
         e.preventDefault();
 
         var ellements = $("#main-section p, #main-section span, #main-section li, #main-section h1, #main-section h2, #main-section h3, #main-section h4, #main-section h5, #main-section h6, #main-section a");
@@ -50,9 +56,11 @@ $(document).ready(function($){
         values_defaults.push({  "tagname" : index_val, "fontsize": font_size })
     });
 
-    $(".elementor-social-icon-font").on("click", function(e){    
+    $("#accessibility-cancel").on("click", function(e){    
         
-        e.preventDefault();       
+        e.preventDefault(); 
+        
+        $("body").removeClass(" pojo-a11y-negative-contrast");
 
         var ellements = $("#main-section p, #main-section span, #main-section li, #main-section h1, #main-section h2, #main-section h3, #main-section h4, #main-section h5, #main-section h6, #main-section a");
         
@@ -63,9 +71,12 @@ $(document).ready(function($){
             }
         } );
 
+        $(".accessibility-box-wrapper").fadeToggle();
+        $(".accessibility-box-title").fadeToggle();
+
     });
 
-    $(".elementor-social-icon-adjust ").on("click", function(e){
+    $("#accessibility-contrast").on("click", function(e){
 
         e.preventDefault();
 
