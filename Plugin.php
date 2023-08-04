@@ -28,6 +28,10 @@ class Plugin extends \MapasCulturais\Plugin
             $this->part('accessibility/controls');
         });
 
+        $app->hook('template(panel.index.nav.main.events):before', function () use ($app) {
+            $this->part('accessibility/controls');
+        });
+
         $app->hook('template(<<*>>.<<*>>.main-footer):end', function () use ($app) {
             $this->part('accessibility/vlibras');    
         });    
