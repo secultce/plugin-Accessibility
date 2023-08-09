@@ -33,9 +33,10 @@ class Plugin extends \MapasCulturais\Plugin
         $app->hook('template(site.search.nav.main.events):before', function () use ($app) {
             $this->part('accessibility/controls');
         });
-        $app->hook('template(<<*>>.single.nav.main.events):before', function () use ($app) {
+        $app->hook('template(<<*>>.<<single|edit>>.nav.main.events):before', function () use ($app) {
             $this->part('accessibility/controls');
         });
+       
         $app->hook('template(<<*>>.<<*>>.main-footer):end', function () use ($app) {
             $this->part('accessibility/vlibras');    
         });    
