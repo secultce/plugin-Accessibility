@@ -24,17 +24,8 @@ class Plugin extends \MapasCulturais\Plugin
         $app->view->enqueueStyle('app', 'accessibility', 'css/accessibility.css');
          
         // add hooks
-        $app->hook('template(site.index.nav.main.events):before', function () use ($app) {
-            $this->part('accessibility/controls');
-        });
-        $app->hook('template(panel.index.nav.main.events):before', function () use ($app) {
-            $this->part('accessibility/controls');
-        });
-        $app->hook('template(site.search.nav.main.events):before', function () use ($app) {
-            $this->part('accessibility/controls');
-        });
-        $app->hook('template(<<*>>.<<single|edit>>.nav.main.events):before', function () use ($app) {
-            $this->part('accessibility/controls');
+        $app->hook('template(<<*>>.<<*>>.nav.main.events):before', function () use ($app) {
+            $app->view->part('accessibility/controls.php');
         });
        
         $app->hook('template(<<*>>.<<*>>.main-footer):end', function () use ($app) {
