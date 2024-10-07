@@ -17,8 +17,6 @@ class Plugin extends \MapasCulturais\Plugin
     {
         $app = App::i();
 
-        $app->view->assetManager->publishFolder('accessibility/img', 'accessibility/img');
-
         // enqueue scripts and styles
         $app->view->enqueueScript('app', 'accessibility', 'js/accessibility.js');
         $app->view->enqueueStyle('app', 'accessibility', 'css/accessibility.css');
